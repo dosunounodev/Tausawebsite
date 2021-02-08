@@ -1,0 +1,43 @@
+// Breakpoints
+
+$xs: 420px;
+$s: 421px;
+$m: 768px;
+$l: 1024px;
+$xl: 1366px;
+
+
+// Smartphones in portrait mode
+@mixin portrait {
+  @media screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+// Smartphones in landscape mode
+@mixin landscape {
+  @media screen and (min-width: $s) {
+    @content;
+  }
+}
+
+// Tablets in portrait mode & large display smartphones landscape mode 
+@mixin tablet {
+  @media screen and (min-width: $m) {
+    @content;
+  }
+}
+
+// Laptos, older desktop monitors & tablets in landscape mode 
+@mixin laptop {
+  @media screen and (min-width: $l) {
+    @content;
+  }
+}
+
+// Desktop with screen 1366px or above
+@mixin desktop {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}

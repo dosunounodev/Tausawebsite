@@ -1,0 +1,5 @@
+nav.navbar#navbar
+  ul.navbar__list#navbar
+    each nameSection, link in headerNavbarLinks
+      li.navbar__item
+        a(href=`/${link}.html`) #{nameSection}
