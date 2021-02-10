@@ -1,4 +1,6 @@
-// main
+/*! -------------------------
+Main.scss
+-------------------------- */
 
 
 // // Helpers y utilidades abstractos (no generan código)
@@ -34,7 +36,7 @@
 
 
 // // Estilos independientes de cada página
-@use './pages/indexpage';
+@use './pages/index';
 @use './pages/home';
 @use './pages/about';
 @use './pages/services';
