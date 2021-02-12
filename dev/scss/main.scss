@@ -13,7 +13,6 @@ Main.scss
 
 
 // Reseteos y estilos globales (etiquetas, no clases o id)
-@use './base/normalize';
 @use './base/reset';
 @use './base/base';
 @use './base/typo';
