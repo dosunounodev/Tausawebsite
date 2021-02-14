@@ -141,7 +141,10 @@ pre {
   font-size: 1em;
 }
 
-nav {
+ul, ol{
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
