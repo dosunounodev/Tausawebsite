@@ -1,0 +1,23 @@
+// /*! -------------------------
+// Sizes
+// -------------------------- */
+
+@use "./variables" as *;
+
+// Small Sizes
+
+$size-sm1: 0.4rem;
+$size-sm2: 0.8rem;
+$size-sm3: 1.2rem;
+
+// Medium Sizes
+
+$size-md1: 1.6rem;
+$size-md2: 2.0rem;
+$size-md3: 2.4rem;
+
+// Large Sizes
+
+$size-lg1: 3.2rem;
+$size-lg2: 4.8rem;
+$size-lg3: 6.4rem;

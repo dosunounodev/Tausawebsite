@@ -2,12 +2,14 @@
 Typo
 -------------------------- */
 
+@use "../abstract/config" as *;
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "arial";
+  font-size: $size-md1;
   font-weight: 400;
 }

@@ -4,12 +4,17 @@
 
 
 // // Helpers y utilidades abstractos (no generan código)
+
+@use './abstract/config';
+
 @use './abstract/variables';
-@use './abstract/colors';
-@use './abstract/placeholders';
-@use './abstract/mixins';
-@use './abstract/functions';
+
 @use './abstract/breakpoints';
+@use './abstract/colors';
+@use './abstract/sizes';
+@use './abstract/functions';
+@use './abstract/mixins';
+@use './abstract/placeholders';
 
 
 // Reseteos y estilos globales (etiquetas, no clases o id)
@@ -27,7 +32,7 @@
 
 
 // // Bloques que conforman el layout
-@use './layout/grid';
+@use './layout/layout';
 @use './layout/header';
 @use './layout/navbar';
 @use './layout/sidebar';

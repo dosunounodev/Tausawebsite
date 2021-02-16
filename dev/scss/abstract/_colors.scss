@@ -2,19 +2,23 @@
 // Colors
 // -------------------------- */
 
+@use "./variables" as *;
+
 // Branding
 
 $color-primary: red;
-$color-secundary: blue;
+$color-secondary: blue;
+$color-extra: green;
 
 
 // Bg & Fg
 
-$color-light: white;
-$color-dark: black;
+$color-light: #F2F5F5;
+$color-dark: rgb(18, 18, 18);
 
 
 // Greys
 
-$color-grey1: grey;
-$color-grey2: lightgrey;
+$color-grey1: #565360;
+$color-grey2: #908e9b;
+$color-grey3: #e1dfe9;

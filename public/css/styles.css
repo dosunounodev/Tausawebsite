@@ -212,8 +212,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "arial";
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -233,7 +233,7 @@ Carrousels
 Forms
 -------------------------- */
 /*! -------------------------
-Grid
+Layout
 -------------------------- */
 /*! -------------------------
 Header
