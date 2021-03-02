@@ -10,6 +10,14 @@ $color-primary: red;
 $color-secondary: green;
 $color-extra: blue;
 
+$color-primary-light: lighten($color-primary, 20%)
+$color-secondary-light: lighten($color-secondary, 20%)
+$color-extra-light: lighten($color-extra, 20%)
+
+$color-primary-dark: darken($color-primary, 20%)
+$color-secondary-dark: darken($color-secondary, 20%)
+$color-extra-dark: darken($color-extra, 20%)
+
 
 // Bg & Fg
 

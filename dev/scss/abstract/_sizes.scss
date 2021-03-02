@@ -6,8 +6,9 @@
 
 // Small Sizes
 
-$size-sm1: 0.8rem;
-$size-sm2: 1.0rem;
+$size-xs: 0.8rem;
+$size-sm1: 1.0rem;
+$size-sm2: 1.2rem;
 $size-sm3: 1.4rem;
 
 // Medium Sizes
@@ -15,9 +16,18 @@ $size-sm3: 1.4rem;
 $size-md1: 1.6rem;
 $size-md2: 2.0rem;
 $size-md3: 2.4rem;
+$size-md4: 2.8rem;
 
 // Large Sizes
 
 $size-lg1: 3.2rem;
-$size-lg2: 4.8rem;
-$size-lg3: 6.4rem;
+$size-lg2: 3.6rem;
+$size-lg3: 4.0rem;
+$size-lg4: 4.4rem;
+
+// Extra-Large Sizes
+
+$size-xl1: 4.8rem;
+$size-xl2: 5.6rem;
+$size-xl3: 6.4rem;
+$size-xxl: 7.2rem;
