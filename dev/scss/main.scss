@@ -3,54 +3,63 @@
 // -------------------------- */
 
 
-// // Helpers y utilidades abstractos (no generan código)
+// A B S T R A C T
+//
+// Helpers y utilidades abstractos
+// (no generan código)
 
-@use './abstract/config';
-
-@use './abstract/variables';
-
-@use './abstract/breakpoints';
-@use './abstract/colors';
-@use './abstract/sizes';
-@use './abstract/functions';
-@use './abstract/mixins';
-@use './abstract/placeholders';
+@use './abstract';
 
 
-// Reseteos y estilos globales (etiquetas, no clases o id)
-@use './base/reset';
-@use './base/base';
-@use './base/typo';
-@use './base/animations';
+
+// B A S E
+//
+// Resets y estilos globales
+// (de etiquetas, sin clases o id)
+
+@use './base';
 
 
-// // Componentes reutilizables e independientes
-@use './components/buttons';
-@use './components/menus';
-@use './components/carrousels';
-@use './components/forms';
+
+// C O M P O N E N T S
+//
+// Componentes reutilizables
+// (son independientes)
+
+@use './components';
 
 
-// // Bloques que conforman el layout
-@use './layout/layout';
-@use './layout/header';
-@use './layout/navbar';
-@use './layout/sidebar';
-@use './layout/footer';
+
+// INDEX -- L A Y O U T
+//
+// Bloques del layout
+// (son independientes)
+
+@use './layout';
 
 
-// // Estilos independientes de cada página
-@use './pages/index';
-@use './pages/home';
-@use './pages/about';
-@use './pages/services';
-@use './pages/contact';
+
+// INDEX -- P A G E S
+//
+// Estilos de cada vista
+// (son independientes)
+
+@use './pages';
 
 
-// // Temas para determinados usuarios
-@use './themes/admin';
-@use './themes/default';
+
+// INDEX -- T H E M E S
+//
+// Temas para cada usuario
+// (son independientes)
+
+@use './themes';
 
 
-// // 3rd party
-// @use './veedors/';
+
+// INDEX -- V E E D O R S
+//
+// 3rd party cfgs
+// (bs5, jquery, animatecss, etc)
+
+@use './veedors';

@@ -10,28 +10,30 @@ $color-primary: red;
 $color-secondary: green;
 $color-extra: blue;
 
-$color-primary-light: lighten($color-primary, 20%)
-$color-secondary-light: lighten($color-secondary, 20%)
-$color-extra-light: lighten($color-extra, 20%)
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-extra-light: lighten($color-extra, 10%);
 
-$color-primary-dark: darken($color-primary, 20%)
-$color-secondary-dark: darken($color-secondary, 20%)
-$color-extra-dark: darken($color-extra, 20%)
+$color-primary-dark: darken($color-primary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-extra-dark: darken($color-extra, 10%);
 
 
 // Bg & Fg
 
-$color-white: #FCFCFC;
-$color-light: #F5F5F5;
-$color-black: #040404;
-$color-dark: #0C0C0C;
+$color-bg-light: #FDFDFC;
+$color-bg-dark: #040400;
 
 
 // Texts
 
-$color-text: #313036;
-$color-label: #908E9B;
-$color-disabled: #D7D5E0;
+$color-text-dark: #202022;
+$color-text: #404042;
+$color-text-light: #606062;
+
+$color-label-dark: #808082;
+$color-label: #BEBEC0;
+$color-label-light: #DDDDDF;
 
 
 

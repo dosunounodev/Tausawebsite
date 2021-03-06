@@ -25,14 +25,16 @@ $xl: 1366px;
   }
 }
 
-// Tablets in portrait mode & large display smartphones landscape mode 
+// Tablets in portrait mode
+// Large display smartphones landscape mode 
 @mixin tablet {
   @media screen and (min-width: $m) {
     @content;
   }
 }
 
-// Laptos, older desktop monitors & tablets in landscape mode 
+// Laptos & older desktop monitors
+// Tablets in landscape mode 
 @mixin laptop {
   @media screen and (min-width: $l) {
     @content;

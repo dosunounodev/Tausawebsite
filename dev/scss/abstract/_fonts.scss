@@ -1,0 +1,52 @@
+// /*! -------------------------
+// Fonts
+// -------------------------- */
+
+@use "./variables" as *;
+
+
+// FAMILIES ...
+
+  // Fuente Principal
+  // Para contenido en general
+  $font-primary: 'Open Sans', sans-serif;
+
+  // Fuente Secundaria
+  // Para contenido especial/destacado
+  $font-secondary: 'Poppins', sans-serif;
+
+
+// SIZES ...
+
+  // Small Sizes
+  $size-sm1: 1.0rem;
+  $size-sm2: 1.2rem;
+  $size-sm3: 1.4rem;
+
+  // Medium Sizes
+  $size-md1: 1.6rem;
+  $size-md2: 1.8rem;
+  $size-md3: 2.0rem;
+
+  // Large Sizes
+  $size-lg1: 2.4rem;
+  $size-lg2: 3.0rem;
+  $size-lg3: 3.6rem;
+
+  // Extra-Large Sizes
+  $size-xl1: 4.2rem;
+  $size-xl2: 4.8rem;
+  $size-xl3: 5.6rem;
+
+  $size-xxl: 6.4rem;
+
+
+// WEIGHTS ...
+
+  // Regular
+  $normal: 400;
+  $medium: 500;
+ 
+  // Heavy
+  $semibold: 600;
+  $bold: 700;

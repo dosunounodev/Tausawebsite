@@ -1,5 +1,10 @@
-/*! -------------------------
-Index
--------------------------- */
+// INDEX -- P A G E S
+//
+// Estilos de cada vista
+// (son independientes)
 
-@use "../abstract/config" as *;
+@forward './page-index';
+@forward './page-home';
+@forward './page-about';
+@forward './page-services';
+@forward './page-contact';

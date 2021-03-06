@@ -2,14 +2,116 @@
 Typo
 -------------------------- */
 
-@use "../abstract/config" as *;
+@use "../abstract" as *;
 
 html {
   font-size: 62.5%;
+  color: $color-text;
 }
 
 body {
-  font-family: "arial";
+  font-family: $font-primary;
   font-size: $size-md1;
   font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: $color-bg-light;
+  min-height: 100vh;
+  padding-left: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+span {
+  display: block;
+  margin-top: 20px;
+}
+
+.head1 {
+  font-family: $font-secondary;
+  font-size: $size-lg3;
+  font-weight: $bold;
+  line-height: 1.3;
+  @include tablet {
+    font-size: $size-xl1;
+  }
+  @include laptop {
+    font-size: $size-xl2;
+  }
+}
+
+.head2 {
+  font-family: $font-secondary;
+  font-size: $size-lg2;
+  font-weight: $bold;
+  line-height: 1.4;
+  @include tablet {
+    font-size: $size-lg3;
+  }
+}
+
+.head3 {
+  font-family: $font-secondary;
+  font-size: $size-lg1;
+  font-weight: $bold;
+  line-height: 1.4;
+  @include tablet {
+    font-size: $size-lg2;
+  }
+}
+
+.head4 {
+  font-family: $font-primary;
+  font-size: $size-md3;
+  font-weight: $semibold;
+  line-height: 1.5;
+  @include tablet {
+    font-size: $size-lg1;
+  }
+}
+
+.text-l {
+  font-family: $font-primary;
+  font-size: $size-md2;
+  font-weight: $semibold;
+  line-height: 1.5;
+  @include tablet {
+    font-size: $size-md3;
+  }
+}
+
+.text-m {
+  font-family: $font-primary;
+  font-size: $size-md1;
+  font-weight: $normal;
+  line-height: 1.6;
+  @include tablet {
+    font-size: $size-md2;
+  }
+}
+
+.text-s {
+  font-family: $font-primary;
+  font-size: $size-sm2;
+  font-weight: $normal;
+  line-height: 1.4;
+  @include tablet {
+    font-size: $size-sm3;
+  }
+}
+
+.text-xs {
+  font-family: $font-primary;
+  font-size: $size-sm1;
+  font-weight: $semibold;
+  line-height: 1.4;
+  @include tablet {
+    font-size: $size-sm2;
+  }
 }
