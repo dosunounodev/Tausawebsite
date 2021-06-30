@@ -1,10 +1,14 @@
 include ../configs/config.pug
 doctype html
-html(lang="en")
+html(lang="es")
   head
     include ../configs/head.pug
   body
     include ../includes/header.pug
+    include ../includes/navbar.pug
     main
-      block content
+      include ../includes/planta.pug
+      include ../includes/servicios.pug
+      include ../includes/calidad.pug
+      include ../includes/contacto.pug
     include ../includes/footer.pug

@@ -6,17 +6,11 @@
 
 // Branding
 
-$color-primary: red;
+$color-primary: #3c498d;
 $color-secondary: green;
-$color-extra: blue;
 
 $color-primary-light: lighten($color-primary, 10%);
 $color-secondary-light: lighten($color-secondary, 10%);
-$color-extra-light: lighten($color-extra, 10%);
-
-$color-primary-dark: darken($color-primary, 10%);
-$color-secondary-dark: darken($color-secondary, 10%);
-$color-extra-dark: darken($color-extra, 10%);
 
 
 // Bg & Fg
@@ -28,12 +22,8 @@ $color-bg-dark: #040400;
 // Texts
 
 $color-text-dark: #202022;
-$color-text: #404042;
-$color-text-light: #606062;
-
-$color-label-dark: #808082;
+$color-text: #51534d;
 $color-label: #BEBEC0;
-$color-label-light: #DDDDDF;
 
 
 

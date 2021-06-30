@@ -9,19 +9,18 @@
 
   // Fuente Principal
   // Para contenido en general
-  $font-primary: 'Open Sans', sans-serif;
+  $font-primary: 'Lato', sans-serif;
 
   // Fuente Secundaria
   // Para contenido especial/destacado
-  $font-secondary: 'Poppins', sans-serif;
+  // 
 
 
 // SIZES ...
 
   // Small Sizes
-  $size-sm1: 1.0rem;
-  $size-sm2: 1.2rem;
-  $size-sm3: 1.4rem;
+  $size-sm1: 1.2rem;
+  $size-sm2: 1.4rem;
 
   // Medium Sizes
   $size-md1: 1.6rem;
@@ -30,23 +29,19 @@
 
   // Large Sizes
   $size-lg1: 2.4rem;
-  $size-lg2: 3.0rem;
-  $size-lg3: 3.6rem;
+  $size-lg2: 3.6rem;
+  $size-lg3: 4.8rem;
 
   // Extra-Large Sizes
-  $size-xl1: 4.2rem;
-  $size-xl2: 4.8rem;
-  $size-xl3: 5.6rem;
-
-  $size-xxl: 6.4rem;
+  $size-xl1: 5.6rem;
+  $size-xl2: 6.4rem;
+  $size-xl3: 7.2rem;
 
 
 // WEIGHTS ...
 
   // Regular
   $normal: 400;
-  $medium: 500;
  
   // Heavy
-  $semibold: 600;
   $bold: 700;

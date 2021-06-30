@@ -36,30 +36,3 @@
 // (son independientes)
 
 @use './layout';
-
-
-
-// INDEX -- P A G E S
-//
-// Estilos de cada vista
-// (son independientes)
-
-@use './pages';
-
-
-
-// INDEX -- T H E M E S
-//
-// Temas para cada usuario
-// (son independientes)
-
-@use './themes';
-
-
-
-// INDEX -- V E E D O R S
-//
-// 3rd party cfgs
-// (bs5, jquery, animatecss, etc)
-
-@use './veedors';
