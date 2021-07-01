@@ -5,8 +5,11 @@ Section
 @use "../abstract" as *;
 
 section {
-  min-height:100vh;
-  padding: 100px 0;
+  min-height: 100vh;
+  padding: 40px 0;
+  @include laptop {
+    padding: 100px 0;
+  }
 }
 
 #planta {

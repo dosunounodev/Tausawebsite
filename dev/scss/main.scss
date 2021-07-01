@@ -2,15 +2,12 @@
 // Main
 // -------------------------- */
 
-
 // A B S T R A C T
 //
 // Helpers y utilidades abstractos
 // (no generan código)
 
 @use './abstract';
-
-
 
 // B A S E
 //
@@ -19,8 +16,6 @@
 
 @use './base';
 
-
-
 // C O M P O N E N T S
 //
 // Componentes reutilizables
@@ -28,16 +23,12 @@
 
 @use './components';
 
-
-
 // INDEX -- L A Y O U T
 //
 // Bloques del layout
 // (son independientes)
 
 @use './layout';
-
-
 
 // INDEX -- V I E W S
 //

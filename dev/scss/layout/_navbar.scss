@@ -5,12 +5,11 @@ Navbar
 @use "../abstract" as *;
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  height:50px;
+  height: 50px;
   background-color: $color-bg-light;
   border-bottom: 2px solid $color-bg-dark;
-  border-top: 2px solid $color-bg-dark;
 }
 
 .navbar__wrap {
@@ -20,38 +19,51 @@ nav {
 
 .nav__logo-container {
   display: flex;
-  width:200px;
-  height: 46px;
+  width: 200px;
+  height: 50px;
 
   img {
     display: block;
-    width: 100%;
+    width: 200px;
     margin-top: 12px;
   }
 }
 
 .nav__menu-container {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
-  width: 100%;
-  height: 46px;
+  align-items: center;
+  width: calc(100% - 200px);
+  // background-color: red;
+  height: 50px;
+}
 
+.nav__burger-wrap {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav__menu-desktop {
-  display:flex;
-  justify-content:space-around;
+  display: none;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 600px;;
-  height: 46px;
+  max-width: 500px;
+  height: 50px;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .nav__link {
   text-decoration: none;
-  font-size: $size-lg1;
+  font-size: $size-md2;
   color: $color-text-dark;
-  @include transition(.3s,0,linear,color);
+  @include transition(0.3s, 0, linear, color);
 
   &:hover {
     color: $color-primary;

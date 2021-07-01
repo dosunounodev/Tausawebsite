@@ -3,3 +3,107 @@ Calidad
 -------------------------- */
 
 @use "../abstract" as *;
+
+.calidad__wrap {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.calidad__cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.calidad__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 280px;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: $color-bg-light;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6);
+  max-width: 650px;
+
+  @include landscape {
+    flex: 1 0 380px;
+  }
+
+  @include tablet {
+    flex: 1 0 500px;
+  }
+
+  @include laptop {
+    flex: 1 0 300px;
+    &:nth-child(3) {
+      margin: 10px 20px;
+    }
+  }
+  &:nth-child(1) {
+    flex-direction: column;
+    flex: 1 0 calc(100% - 20px);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    @include tablet {
+      flex-direction: row;
+    }
+    @include laptop {
+      max-width: initial;
+    }
+  }
+}
+
+.calidad__special__data,
+.calidad__special__img {
+  width: 100%;
+  h3 {
+    font-size: $size-md3;
+  }
+  // @include landscape {
+  //   h3 {
+  //     font-size: $size-lg1;
+  //   }
+  // }
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.calidad__special__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calidad__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.calidad__icon {
+  align-self: flex-end;
+  font-size: $size-xl2;
+  color: $color-primary;
+}
+
+.calidad__text {
+  margin-bottom: 20px;
+}
+
+.calidad__button {
+  width: 100%;
+  margin-right: 20px;
+  padding: 10px 20px;
+  color: $color-bg-light;
+  background-color: $color-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition(0.3s, 0, linear, background-color);
+
+  &:hover {
+    background-color: $color-bg-dark;
+  }
+}

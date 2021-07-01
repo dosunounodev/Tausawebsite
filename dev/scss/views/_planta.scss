@@ -6,40 +6,48 @@ Planta
 
 .planta__wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
+  @include laptop {
+    flex-direction: row;
+  }
 }
 
 .planta__images,
 .planta__description {
-  width: 50%
+  width: 100%;
+  @include laptop {
+    width: 50%;
+  }
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.planta__images {
+  order: 2;
+  @include laptop {
+    order: 1;
+  }
 }
 
 .planta__img-wrap {
-  width:100%;
+  width: 100%;
   height: 100%;
 
   img {
     display: block;
     max-width: 100%;
     height: auto;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
   }
 }
 
 .planta__description {
-  padding-left: 40px;
-}
-
-.planta__description h2 {
-  font-size: $size-lg3;
-  color: $color-primary;
-  margin-bottom: 20px;
-}
-
-.planta__description h3 {
-  margin-bottom:20px;
-  font-size: $size-lg1;
-  color: $color-text-dark;
+  order: 1;
+  @include laptop {
+    padding-left: 40px;
+    order: 2;
+  }
 }
 
 .planta__article {

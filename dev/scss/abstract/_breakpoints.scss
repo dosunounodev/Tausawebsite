@@ -10,7 +10,6 @@ $m: 768px;
 $l: 1024px;
 $xl: 1366px;
 
-
 // Smartphones in portrait mode
 @mixin portrait {
   @media screen and (max-width: $xs) {
@@ -26,7 +25,7 @@ $xl: 1366px;
 }
 
 // Tablets in portrait mode
-// Large display smartphones landscape mode 
+// Large display smartphones landscape mode
 @mixin tablet {
   @media screen and (min-width: $m) {
     @content;
@@ -34,7 +33,7 @@ $xl: 1366px;
 }
 
 // Laptos & older desktop monitors
-// Tablets in landscape mode 
+// Tablets in landscape mode
 @mixin laptop {
   @media screen and (min-width: $l) {
     @content;
