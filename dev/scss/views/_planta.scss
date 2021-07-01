@@ -1,0 +1,47 @@
+/*! -------------------------
+Planta
+-------------------------- */
+
+@use "../abstract" as *;
+
+.planta__wrap {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.planta__images,
+.planta__description {
+  width: 50%
+}
+
+.planta__img-wrap {
+  width:100%;
+  height: 100%;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.planta__description {
+  padding-left: 40px;
+}
+
+.planta__description h2 {
+  font-size: $size-lg3;
+  color: $color-primary;
+  margin-bottom: 20px;
+}
+
+.planta__description h3 {
+  margin-bottom:20px;
+  font-size: $size-lg1;
+  color: $color-text-dark;
+}
+
+.planta__article {
+  margin-bottom: 40px;
+}

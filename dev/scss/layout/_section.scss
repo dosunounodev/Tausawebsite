@@ -3,3 +3,24 @@ Section
 -------------------------- */
 
 @use "../abstract" as *;
+
+section {
+  min-height:100vh;
+  padding: 100px 0;
+}
+
+#planta {
+  background-color: $color-bg-light;
+}
+
+#servicios {
+  background-color: $color-bg-grey;
+}
+
+#calidad {
+  background-color: $color-primary;
+}
+
+#contacto {
+  background-color: $color-bg-light;
+}

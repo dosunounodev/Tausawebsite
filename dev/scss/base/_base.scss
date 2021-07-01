@@ -3,3 +3,11 @@ Base
 -------------------------- */
 
 @use "../abstract" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+header, nav, section, footer {
+  width: 100%;
+}

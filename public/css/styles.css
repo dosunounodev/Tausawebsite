@@ -7,7 +7,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-*, *::before, *::after {
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
   box-sizing: inherit;
 }
 
@@ -204,6 +208,14 @@ textarea {
 /*! -------------------------
 Base
 -------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+header, nav, section, footer {
+  width: 100%;
+}
+
 /*! -------------------------
 Typo
 -------------------------- */
@@ -215,6 +227,16 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   color: #51534d;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
 }
 
 /*! -------------------------
@@ -232,18 +254,229 @@ Menus
 /*! -------------------------
 Layout
 -------------------------- */
+.header__wrap,
+.navbar__wrap,
+.planta__wrap,
+.servicios__wrap,
+.calidad__wrap,
+.contacto__wrap,
+.footer__wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /*! -------------------------
 Grid
 -------------------------- */
 /*! -------------------------
 Header
 -------------------------- */
+header {
+  height: calc(100vh - 50px);
+  background-image: url("../assets/pic01.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /*! -------------------------
 Navbar
 -------------------------- */
+nav {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: #FDFDFC;
+  border-bottom: 2px solid #040400;
+  border-top: 2px solid #040400;
+}
+
+.navbar__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+  height: 50px;
+}
+
+.nav__logo-container {
+  display: flex;
+  width: 200px;
+  height: 46px;
+}
+.nav__logo-container img {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.nav__menu-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 46px;
+}
+
+.nav__menu-desktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 46px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #202022;
+  will-change: color;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+}
+.nav__link:hover {
+  color: #3c498d;
+}
+
 /*! -------------------------
 Section
 -------------------------- */
+section {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+#planta {
+  background-color: #FDFDFC;
+}
+
+#servicios {
+  background-color: #EBEBEB;
+}
+
+#calidad {
+  background-color: #3c498d;
+}
+
+#contacto {
+  background-color: #FDFDFC;
+}
+
 /*! -------------------------
 Footer
+-------------------------- */
+footer {
+  height: 50vh;
+  background-color: #040400;
+}
+
+/*! -------------------------
+Planta
+-------------------------- */
+.planta__wrap {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.planta__images,
+.planta__description {
+  width: 50%;
+}
+
+.planta__img-wrap {
+  width: 100%;
+  height: 100%;
+}
+.planta__img-wrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.planta__description {
+  padding-left: 40px;
+}
+
+.planta__description h2 {
+  font-size: 4.8rem;
+  color: #3c498d;
+  margin-bottom: 20px;
+}
+
+.planta__description h3 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  color: #202022;
+}
+
+.planta__article {
+  margin-bottom: 40px;
+}
+
+/*! -------------------------
+Servicios
+-------------------------- */
+.servicios__wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 1fr 50px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.servicios__bg {
+  grid-column: 2/span 4;
+  grid-row: 1/span 3;
+}
+
+.servicios__content {
+  grid-column: 1/span 3;
+  grid-row: 2/span 1;
+  padding: 40px;
+  background-color: #FDFDFC;
+}
+
+.servicios__article2 {
+  margin-top: 60px;
+  font-size: 2rem;
+}
+
+.servicios__content h2 {
+  font-size: 4.8rem;
+  color: #3c498d;
+  margin-bottom: 20px;
+}
+
+.servicios__content h3 {
+  font-size: 3.6rem;
+  color: #3c498d;
+  margin-bottom: 20px;
+}
+
+.servicios__box {
+  grid-column: 3/span 2;
+  grid-row: 2/span 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.servicios__spanbox {
+  margin-bottom: 40px;
+  padding: 20px 40px;
+  background-color: #3c498d;
+  color: #FDFDFC;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/*! -------------------------
+Calidad
+-------------------------- */
+/*! -------------------------
+Contacto
 -------------------------- */

@@ -3,3 +3,57 @@ Navbar
 -------------------------- */
 
 @use "../abstract" as *;
+
+nav {
+  position: sticky;
+  top: 0;
+  height:50px;
+  background-color: $color-bg-light;
+  border-bottom: 2px solid $color-bg-dark;
+  border-top: 2px solid $color-bg-dark;
+}
+
+.navbar__wrap {
+  @include flex(row, space-between);
+  height: 50px;
+}
+
+.nav__logo-container {
+  display: flex;
+  width:200px;
+  height: 46px;
+
+  img {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+.nav__menu-container {
+  display:flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 46px;
+
+}
+
+.nav__menu-desktop {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;;
+  height: 46px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: $size-lg1;
+  color: $color-text-dark;
+  @include transition(.3s,0,linear,color);
+
+  &:hover {
+    color: $color-primary;
+  }
+}
