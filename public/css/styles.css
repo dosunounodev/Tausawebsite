@@ -649,10 +649,20 @@ Calidad
 .calidad__special__img h3 {
   font-size: 2rem;
 }
+@media screen and (min-width: 421px) {
+  .calidad__special__data h3,
+.calidad__special__img h3 {
+    font-size: 2.4rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .calidad__special__data,
 .calidad__special__img {
     width: 50%;
+  }
+  .calidad__special__data h3,
+.calidad__special__img h3 {
+    font-size: 3.6rem;
   }
 }
 
