@@ -61,17 +61,19 @@ Calidad
 .calidad__special__img {
   width: 100%;
   h3 {
-    font-size: $size-md3;
+    font-size: $size-md2;
   }
   @include landscape {
     h3 {
-      font-size: $size-lg1;
+      font-size: $size-md3;
     }
   }
   @include tablet {
     width: 50%;
+  }
+  @include laptop {
     h3 {
-      font-size: $size-lg2;
+      font-size: $size-lg1;
     }
   }
 }

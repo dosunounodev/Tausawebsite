@@ -272,6 +272,84 @@ Buttons
 /*! -------------------------
 Forms
 -------------------------- */
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-contact__field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-contact__input, .form-contact__msj {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid #3c498d;
+  background-color: #fdfdfc;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3c498d;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.form-contact__input::placeholder, .form-contact__msj::placeholder {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3c498d;
+}
+
+.form-contact__msj {
+  width: 100%;
+  height: 90px;
+  resize: none;
+}
+
+.form-contact__submit {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fdfdfc;
+  border: 2px solid #3c498d;
+  background-color: #3c498d;
+  cursor: pointer;
+  text-transform: uppercase;
+  will-change: background-color;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+}
+.form-contact__submit::placeholder {
+  font-size: inherit;
+  color: #3c498d;
+}
+.form-contact__submit:hover {
+  background-color: #040400;
+}
+
+.form__alert {
+  display: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  background-color: crimson;
+}
+
+.form__alert--active {
+  display: block;
+}
+
 /*! -------------------------
 Menus
 -------------------------- */
@@ -1007,12 +1085,12 @@ Calidad
 }
 .calidad__special__data h3,
 .calidad__special__img h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 421px) {
   .calidad__special__data h3,
 .calidad__special__img h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1020,9 +1098,11 @@ Calidad
 .calidad__special__img {
     width: 50%;
   }
+}
+@media screen and (min-width: 1024px) {
   .calidad__special__data h3,
 .calidad__special__img h3 {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -1150,82 +1230,4 @@ Contacto
     margin-top: 0px;
     padding: 0 20px;
   }
-}
-
-.form-contact {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.form-contact__field {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.form-contact__input, .form-contact__msj {
-  width: 100%;
-  height: 40px;
-  padding: 10px;
-  border: 2px solid #3c498d;
-  background-color: #fdfdfc;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #3c498d;
-  -webkit-appearance: none;
-          appearance: none;
-}
-.form-contact__input::placeholder, .form-contact__msj::placeholder {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #3c498d;
-}
-
-.form-contact__msj {
-  width: 100%;
-  height: 90px;
-  resize: none;
-}
-
-.form-contact__submit {
-  width: 100%;
-  height: 40px;
-  padding: 0 20px;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #fdfdfc;
-  border: 2px solid #3c498d;
-  background-color: #3c498d;
-  cursor: pointer;
-  text-transform: uppercase;
-  will-change: background-color;
-  transition-property: background-color;
-  transition-duration: 0.3s;
-  transition-delay: 0;
-  transition-timing-function: linear;
-}
-.form-contact__submit::placeholder {
-  font-size: inherit;
-  color: #3c498d;
-}
-.form-contact__submit:hover {
-  background-color: #040400;
-}
-
-.form__alert {
-  display: none;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  padding: 5px 20px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 5px;
-  background-color: crimson;
-}
-
-.form__alert--active {
-  display: block;
 }

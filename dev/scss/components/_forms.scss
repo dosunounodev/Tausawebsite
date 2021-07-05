@@ -3,3 +3,78 @@ Forms
 -------------------------- */
 
 @use "../abstract" as *;
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-contact__field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-contact__input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid $color-primary;
+  background-color: $color-bg-light;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $color-primary;
+  &::placeholder {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-primary;
+  }
+  appearance: none;
+}
+
+.form-contact__msj {
+  @extend .form-contact__input;
+  width: 100%;
+  height: 90px;
+  resize: none;
+}
+
+.form-contact__submit {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $color-bg-light;
+  border: 2px solid $color-primary;
+  background-color: $color-primary;
+  cursor: pointer;
+  text-transform: uppercase;
+  &::placeholder {
+    font-size: inherit;
+    color: $color-primary;
+  }
+  @include transition(0.3s, 0, linear, background-color);
+
+  &:hover {
+    background-color: $color-bg-dark;
+  }
+}
+
+.form__alert {
+  display: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  background-color: crimson;
+}
+
+.form__alert--active {
+  display: block;
+}
