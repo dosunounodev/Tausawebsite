@@ -1,2 +1,43 @@
 section#contacto
   div.contacto__wrap
+    .contacto__location
+      h2.contacto__title 
+        i.fas.fa-map-marked-alt
+        |  Ubicación:
+      p.contacto__text Conquistadores del desierto Nº 3510.
+        br 
+        | Parque Industrial Oeste.
+        br 
+        | Ciudad de Neuquén.
+      .contacto__mapframe
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12418.506471596242!2d-68.10980817217211!3d-38.90965296553792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3587cd6be8f3%3A0xc94701f332b27e68!2sTAUSA%20S.A!5e0!3m2!1ses-419!2sar!4v1625497765313!5m2!1ses-419!2sar", allowfullscreen, loading="lazy")
+    .contacto__form
+      h2.contacto__title 
+        i.fas.fa-envelope
+        |  Contacto:
+      h3.contacto__subtitle Dejanos tu mensaje:
+      form(action="https://formsubmit.co/emmefdz@gmail.com" method="POST").form-contact#form-contacto
+        input(type="hidden" name="_next" value="http://tausa.com.ar/index.html#contacto")
+        input(type="hidden" name="_captcha" value="false")
+        input(type="hidden" name="_subject" value="Nuevo mensaje de contacto en Tausa.com.ar")
+        input(type="text" name="_honey" style="display:none")
+        .form-contact__field
+          input(type="text" name="name" placeholder="Nombre").form-contact__input#form-contacto-name
+          span.form__alert Alert Text
+        .form-contact__field
+          input(type="mail" name="email"  placeholder="E-Mail").form-contact__input#form-contacto-mail
+          span.form__alert Alert Text
+        .form-contact__field
+          textarea(name="msj" placeholder="Deja tu mensaje").form-contact__msj#form-contacto-msj
+          span.form__alert Alert Text
+        .form-contact__field
+          input(type="submit" value="Enviar").form-contact__submit
+      h3.contacto__subtitle Contactate con nosotros:
+        p.contacto__data.contacto__mail
+          i.fas.fa-envelope
+          |  ventas@tausa.com.ar
+        p.contacto__data.contacto__phone
+          i.fas.fa-phone
+          |  02994412830
+
+

@@ -12,19 +12,17 @@ $color-secondary: green;
 $color-primary-light: lighten($color-primary, 10%);
 $color-secondary-light: lighten($color-secondary, 10%);
 
-
 // Bg & Fg
 
-$color-bg-light: #FDFDFC;
+$color-bg-light: #fdfdfc;
 $color-bg-dark: #040400;
-$color-bg-grey: #EBEBEB;
+$color-bg-grey: #ebebeb;
 
+$color-bg-light-transparent: rgba(223, 223, 223, 0.45);
+$color-bg-dark-transparent: hsla(60, 100%, 1%, 0.75);
 
 // Texts
 
 $color-text-dark: #202022;
 $color-text: #51534d;
-$color-label: #BEBEC0;
-
-
-
+$color-label: #bebec0;

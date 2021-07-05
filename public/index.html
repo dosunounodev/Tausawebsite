@@ -30,12 +30,43 @@
             <li class="nav__menu-item"><a class="nav__link" href="#calidad">Calidad </a></li>
             <li class="nav__menu-item"><a class="nav__link" href="#contacto">Contacto </a></li>
           </ul>
-          <div class="nav__burger-wrap"></div>
+          <div class="nav__burger-wrap">
+            <div class="menu-icon-container" id="menu-icon-container">
+              <div class="menu-icon"></div>
+            </div>
+          </div>
+          <ul class="menu__container menu__container--hide" id="menu__container"><a class="menu__link" href="#header"> 
+              <li class="menu__item">Nosotros</li></a><a class="menu__link" href="#planta"> 
+              <li class="menu__item">Nuestra Planta</li></a><a class="menu__link" href="#servicios"> 
+              <li class="menu__item">Servicios</li></a><a class="menu__link" href="#calidad"> 
+              <li class="menu__item">Calidad</li></a><a class="menu__link" href="#contacto"> 
+              <li class="menu__item">Contacto</li></a></ul>
         </div>
       </div>
     </nav>
     <header id="header">
-      <div class="header__wrap"></div>
+      <div class="header__background">
+        <div class="header__wrap">
+          <div class="header__hero">
+            <div class="hero__logo"><img src="./assets/Logo01.png" alt="Tausa Logo"></div>
+            <h1 class="hero__title">Una Empresa <span class="hero__span">Argentina</span></h1>
+            <p class="hero__text">Fundada hace 17 años y enfocada a satisfacer la demanda de fabricación, venta, almacenamiento y logística de productos químicos en la Provincia de Neuquén.</p>
+          </div>
+          <div class="header__cards">
+            <div class="header__cardbox">
+              <h2 class="cardbox__title">Calidad y Seguridad</h2>
+              <p class="cardbox__text">Nuestros procesos estan avalados por certificación Iso en Calidad y 4500001/2018</p>
+            </div>
+            <div class="header__cardbox">
+              <h2 class="cardbox__title">Flexibilidad</h2>
+              <p class="cardbox__text">Tenemos la flexibilidad para resolver las necesidades del cliente de manera competitiva.</p>
+            </div>
+            <div class="header__cardbox--doble">
+              <p class="cardbox__dobletext">Más de 17 años de experiencia nos avalan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section id="planta">
@@ -47,11 +78,11 @@
             <h2>Base Neuquén</h2>
             <article class="planta__article1 planta__article">
               <h3>Procesamiento, Almacenamiento y Logística de productos químicos</h3>
-              <p>- Galpón de 800 m2 y playa de hormigón de 1600 m2<br>- 61 m3 en 6 Tanques silo de proceso con paletas mezcladoras<br>- 105 m3 en 3 Tanques de almacenamiento de metanol y xileno/tolueno<br>- 80 m3 en Tanques plásticos para agua<br>- 8 bombas de trasvase indpendientes con juegos de mangueras</p>
+              <p>- Galpones equipados para almacenamiento de todo tipo de sustancias.<br>- Amplias playas de almacenamiento<br>- Reactor con sistema de compensación térmica<br>- Tanques silos de proceso con paletas mezcladoras.<br>- Tanques de almacenamiento de Metanol, Xileno/Tolueno y agua.<br>- Multiplicidad de bombas de trasvase, para evitar contaminaciones de productos.</p>
             </article>
             <article class="planta__article2 planta__article">
               <h3>Permisos y Certificaciones</h3>
-              <p>- Certificación ISO 9001:2015 y 45001:2018<br>- Instalaciones con Red de Incendio pararrayos<br>- Seguridad del predio por sistemas monitoreados de ultima generación<br>- Licencia Comercial<br>- Licencia Ambiental Municipal y Provincial<br>- Inscripción en Renpre<br>- Inscripción Resolución 1102<br>- Inscripción I.N.V.</p>
+              <p>- Certificación ISO 9001:2015 y 45001:2018<br>- Instalaciones con Red de Incendio<br>- Sistemas antiestáticas y pararrayos.<br>- Seguridad del predio por sistemas monitoreados de última generación<br>- Licencia Comercial<br>- Licencia Ambiental Municipal y Provincial<br>- Inscripción en Renpre<br>- Inscripción Resolución 1102<br>- Inscripción I.N.V.</p>
             </article>
           </div>
         </div>
@@ -62,7 +93,7 @@
           <div class="servicios__content">
             <article class="servicios__article1">
               <h2>Nuestros Servicios:</h2>
-              <p>- Producción de químicos a Fazon.<br>- Venta de diluyentes para Fazon, Metanol, Xileno, Tolueno.<br>- Recepción y almacenamiento a granel de Metanol , Xileno , Tolueno , Ácido Clorhídrico.<br>- Lavado y reparación de IBC.<br>- Filtrado de productos.<br>- Recepción y almacenamiento de materia prima del Cliente.<br>- Almacenamiento de producto terminado en IBC o a Granel.<br>- Despacho de metanol en IBC o a granel.</p>
+              <p>- Producción de químicos a Fazon, por mezclado y por reacciones.<br>- Venta de diluyentes para Fazon, Metanol, Xileno, Tolueno.<br>- Recepción y almacenamiento a granel de Metanol , Xileno , Tolueno , Ácido Clorhídrico.<br>- Lavado y reparación de IBC.<br>- Filtrado de productos.<br>- Recepción y almacenamiento de materia prima del Cliente.<br>- Almacenamiento de producto terminado en IBC o a Granel.<br>- Despacho de metanol en IBC o a granel.</p>
             </article>
             <article class="servicios__article2">
               <h3>Nuestra Diferencia:</h3>
@@ -87,31 +118,71 @@
             <article class="calidad__card">
               <div class="card"></div>
               <h3>Compromiso con nuestros clientes</h3>
-              <p class="calidad__text">Puntualidad en cumplimiento de los plazos tanto en la fabricación como en la entrega de nuestros productos.</p>
-              <p class="calidad__text">Brindamos soluciones integrales para que cada cliente pueda desarrollarse y poner foco en su negocio.</p>
+              <p class="calidad__text">Puntualidad en cumplimiento en los plazos de fabricación y entrega de productos.</p>
+              <p class="calidad__text">Brindamos soluciones integrales para que el cliente se pueda desarrollar y ponga foco en su negocio.</p>
               <div class="calidad__cta"><a class="calidad__button" href="#servicios">ver servicios</a><i class="fas fa-handshake calidad__icon"></i></div>
             </article>
             <article class="calidad__card">
               <h3>Metodología en los procedimientos</h3>
-              <p class="calidad__text">Contamos con personal especializado y altamente capacitado.</p>
-              <p class="calidad__text">Seguridad en planta: Sin accidentes desde nuestros inicios de operaciones con químicos en Enero de 2016</p>
+              <p class="calidad__text">Contamos con múltiples certificaciones que respaldan nuestra prioridad por la calidad.</p>
+              <p class="calidad__text">Nuestro personal es especializado y altamente capacitado.</p>
+              <p class="calidad__text">Tenemos un riguroso seguimiento en la aplicación de los procedimientos en la planta.</p>
               <div class="calidad__cta"><a class="calidad__button" href="#planta">ver planta</a><i class="fas fa-hard-hat calidad__icon"></i></div>
             </article>
             <article class="calidad__card">
-              <h3>Calidad en nuestra operación</h3>
-              <p class="calidad__text">Nos avalan más de 40.000tn de producción con un 0% de rechazo.</p>
-              <p class="calidad__text">Contamos con múltiples certificaciones que respaldan nuestra prioridad por la calidad.</p>
+              <h3>Calidad y Seguridad en nuestra operación</h3>
+              <p class="calidad__text">Nuestra calidad de procesos está avalada por más de 40.000tn de producción sin rechazos por calidad.</p>
+              <p class="calidad__text">Sin accidentes desde nuestros inicios de operaciones con productos químicos en Enero de 2016</p>
               <div class="calidad__cta"><a class="calidad__button" href="#contacto">contactarnos</a><i class="fas fa-award calidad__icon"></i></div>
             </article>
           </div>
         </div>
       </section>
       <section id="contacto">
-        <div class="contacto__wrap"></div>
+        <div class="contacto__wrap">
+          <div class="contacto__location">
+            <h2 class="contacto__title"> <i class="fas fa-map-marked-alt"></i> Ubicación:</h2>
+            <p class="contacto__text">Conquistadores del desierto Nº 3510.<br>Parque Industrial Oeste.<br>Ciudad de Neuquén.</p>
+            <div class="contacto__mapframe">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12418.506471596242!2d-68.10980817217211!3d-38.90965296553792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3587cd6be8f3%3A0xc94701f332b27e68!2sTAUSA%20S.A!5e0!3m2!1ses-419!2sar!4v1625497765313!5m2!1ses-419!2sar" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="contacto__form">
+            <h2 class="contacto__title"> <i class="fas fa-envelope"></i> Contacto:</h2>
+            <h3 class="contacto__subtitle">Dejanos tu mensaje:</h3>
+            <form class="form-contact" action="https://formsubmit.co/emmefdz@gmail.com" method="POST" id="form-contacto">
+              <input type="hidden" name="_next" value="http://tausa.com.ar/index.html#contacto">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Nuevo mensaje de contacto en Tausa.com.ar">
+              <input type="text" name="_honey" style="display:none">
+              <div class="form-contact__field">
+                <input class="form-contact__input" type="text" name="name" placeholder="Nombre" id="form-contacto-name"><span class="form__alert">Alert Text</span>
+              </div>
+              <div class="form-contact__field">
+                <input class="form-contact__input" type="mail" name="email" placeholder="E-Mail" id="form-contacto-mail"><span class="form__alert">Alert Text</span>
+              </div>
+              <div class="form-contact__field">
+                <textarea class="form-contact__msj" name="msj" placeholder="Deja tu mensaje" id="form-contacto-msj"></textarea><span class="form__alert">Alert Text</span>
+              </div>
+              <div class="form-contact__field">
+                <input class="form-contact__submit" type="submit" value="Enviar">
+              </div>
+            </form>
+            <h3 class="contacto__subtitle">Contactate con nosotros:
+              <p class="contacto__data contacto__mail"><i class="fas fa-envelope"></i> ventas@tausa.com.ar</p>
+              <p class="contacto__data contacto__phone"><i class="fas fa-phone"></i> 02994412830</p>
+            </h3>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="footer">
-      <div class="footer__wrap"></div>
+      <div class="footer__wrap">
+        <p class="footer__text">© 2021 - Tausa</p>
+        <p class="footer__span">Reservados todos los derechos.</p>
+        <p class="footer__text">Desarrollo web: <a href="https:dosunounodev.com" target="_blank" rel="noopener">dosunouno.dev </a></p>
+      </div>
     </footer>
+    <script src="./js/index.js"> </script>
   </body>
 </html>

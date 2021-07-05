@@ -5,7 +5,7 @@ Section
 @use "../abstract" as *;
 
 section {
-  min-height: 100vh;
+  // min-height: 100vh;
   padding: 40px 0;
   @include laptop {
     padding: 100px 0;

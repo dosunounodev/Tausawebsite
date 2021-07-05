@@ -1,0 +1,115 @@
+/*! -------------------------
+Menu
+-------------------------- */
+
+@use "../abstract" as *;
+
+.menu-icon-container {
+  @include flex(row, center, center);
+  width: 40px;
+  height: 40px;
+  @media (hover: hover) and (pointer: fine) {
+    cursor: pointer;
+    &:hover {
+      & > .menu-icon {
+        background-color: $color-primary;
+        transform: scale(1.1);
+      }
+      & > .menu-icon--active {
+        background-color: $color-text-dark;
+        transform: rotate(45deg) scale(1);
+      }
+    }
+  }
+}
+
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: $color-text-dark;
+  @include transition(0.5s, 0, linear, background-color, transform);
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: $color-text-dark;
+    @include transition(0.5s, 0, linear, background-color, transform, opacity);
+  }
+  &::after {
+    transform: translateY(-10px);
+  }
+  &::before {
+    transform: translateY(10px);
+  }
+}
+
+.menu-icon--active {
+  background-color: $color-primary;
+  transform: rotate(45deg) scale(0.8);
+
+  &::after {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  &::before {
+    transform: translateY(0px) rotate(90deg);
+    background-color: $color-primary;
+  }
+}
+
+.menu__container {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 100;
+  @include flex(column, space-evenly, center);
+  width: 100%;
+  height: calc(100vh - 50px);
+  padding: 40px 0 60px;
+  background-color: rgba($color-bg-dark, 0.9);
+  transform: translate(0);
+  @include transition(0.4s, 0, linear, transform, opacity);
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu__container--hide {
+  transform: translatex(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu__link {
+  // transform: skew(-45deg) translatex(-20px);
+  // transform: translatex(-20px);
+  align-self: center;
+  // align-self: flex-start;
+  width: 80%;
+  background-color: rgba($color-primary, 0.9);
+  font-size: $size-md3;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $color-bg-light;
+  &:nth-child(even) {
+    // transform: skew(-45deg) translatex(20px);
+    // transform: translatex(20px);
+    // align-self: flex-end;
+    background-color: rgba($color-bg-light, 0.9);
+    color: $color-primary;
+    text-align: center;
+  }
+}
+
+.menu__item {
+  // transform: skew(45deg);
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+}

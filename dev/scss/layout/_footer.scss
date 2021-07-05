@@ -5,6 +5,36 @@ Footer
 @use "../abstract" as *;
 
 footer {
-  height: 100px;
   background-color: $color-bg-dark;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__text {
+  font-size: $size-md1;
+  color: $color-bg-light;
+
+  a {
+    font-weight: 700;
+    color: $color-primary;
+    @include transition(0.3s, 0, linear, color);
+    &:hover {
+      color: $color-bg-light;
+    }
+  }
+}
+
+.footer__span {
+  font-size: $size-sm2;
+  color: $color-bg-light;
 }
