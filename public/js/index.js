@@ -1,6 +1,13 @@
-// ****************************************
-// ********* FORMULARIOS
-// ****************************************
+//
+// Sets
+//
+
+const w = window;
+const d = document;
+
+//
+// Forms
+//
 
 // Sets de Errores y Exito
 
@@ -30,9 +37,7 @@ function mailInvalido(mail) {
   }
 }
 
-// ****************************************
-// ********* FORMULARIO CONTACTO
-// ****************************************
+// Contact form
 
 const FORM_CONTACTO = document.getElementById('form-contacto');
 const FORM_CONTACTO_NAME = document.getElementById('form-contacto-name');
@@ -92,10 +97,12 @@ function checkFieldsContacto() {
   console.log(erroresContacto);
 }
 
+//
+// Menu y Botones
+//
+
 // Toggle de menu
 
-const w = window;
-const d = document;
 const menubtn = d.getElementById('menu-icon-container');
 const menucontainer = d.getElementById('menu__container');
 
@@ -113,3 +120,13 @@ menucontainer.addEventListener('click', (e) => {
     toggleMenu();
   }
 });
+
+const moreInfoModal = d.getElementById('more-info-modal');
+const moreInfoBtn = d.getElementById('more-info-btn');
+const lessInfoBtn = d.getElementById('less-info-btn');
+
+function toggleModal() {
+  moreInfoModal.classList.toggle('mobile__cards-hide');
+}
+moreInfoBtn.addEventListener('click', (e) => toggleModal());
+lessInfoBtn.addEventListener('click', (e) => toggleModal());

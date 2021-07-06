@@ -1,18 +1,45 @@
 header#header
   div.header__background
     div.header__wrap
+
+      .header__mobile
+        h2.mobile__title Fabricación, venta, almacenamiento y logística de productos químicos en la Provincia de Neuquén.
+        a(href="#servicios").mobile__cta Ver servicios 
+        a(href="#").mobile__cta.mobile__cta--special#more-info-btn Conoce Más
+
+      .mobile__cards.mobile__cards-hide#more-info-modal
+
+        .header__cardbox
+          h2.cardbox__title--special Quienes Somos:
+          p.cardbox__text Somos una empresa Argentina, fundada hace 17 años. Enfocada a satisfacer la demanda de fabricación, venta, almacenamiento y logística de productos químicos en la Provincia de Neuquén.
+
+        .header__cardbox
+          h2.cardbox__title--special Calidad y Seguridad
+          p.cardbox__text Procesos avalados por certificaciones en: Calidad (ISO 9001) & Seguridad y Salud en trabajo (ISO 45001)
+
+        .header__cardbox
+          h2.cardbox__title--special Flexibilidad
+          p.cardbox__text Tenemos la flexibilidad para resolver las necesidades del cliente de manera competitiva.
+
+        a(href="#servicios").mobile__cta#less-info-btn Ver servicios 
+
       .header__hero
         .hero__logo
           img(src="./assets/Logo01.png", alt="Tausa Logo")
         h1.hero__title Una Empresa 
           span.hero__span Argentina
-        p.hero__text Fundada hace 17 años y enfocada a satisfacer la demanda de fabricación, venta, almacenamiento y logística de productos químicos en la Provincia de Neuquén.
+        p.hero__text Enfocada a satisfacer la demanda de fabricación, venta, almacenamiento y logística de productos químicos en la Provincia de Neuquén.
+        a(href="#servicios").tablet__cta Ver servicios
+
       .header__cards
+
         .header__cardbox
           h2.cardbox__title Calidad y Seguridad
           p.cardbox__text Procesos avalados por certificaciones en: Calidad (ISO 9001) & Seguridad y Salud en trabajo (ISO 45001)
+
         .header__cardbox
           h2.cardbox__title Flexibilidad
           p.cardbox__text Tenemos la flexibilidad para resolver las necesidades del cliente de manera competitiva.
+        
         .header__cardbox--doble
           p.cardbox__dobletext Más de 17 años de experiencia nos avalan.
