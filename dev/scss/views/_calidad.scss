@@ -60,6 +60,9 @@ Calidad
 .calidad__special__data,
 .calidad__special__img {
   width: 100%;
+}
+
+.calidad__special__data {
   h3 {
     font-size: $size-md2;
   }
@@ -69,10 +72,12 @@ Calidad
     }
   }
   @include tablet {
-    width: 50%;
+    width: 60%;
+    padding-right: 20px;
   }
   @include laptop {
     h3 {
+      max-width: 560px;
       font-size: $size-lg1;
     }
   }
@@ -82,6 +87,9 @@ Calidad
   display: flex;
   justify-content: center;
   align-items: center;
+  @include tablet {
+    width: 40%;
+  }
 }
 
 .calidad__cta {
