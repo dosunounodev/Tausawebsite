@@ -378,7 +378,7 @@ Header
 header {
   height: 100vh;
   padding-top: 50px;
-  background-image: url("../assets/pic00.jpeg");
+  background-image: url("../assets/pic00.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
