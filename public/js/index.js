@@ -111,6 +111,13 @@ function toggleMenu() {
   menucontainer.classList.toggle('menu__container--hide');
 }
 
+function toggleModal() {
+  moreInfoModal.classList.toggle('mobile__cards-hide');
+}
+function closeModal() {
+  moreInfoModal.classList.add('mobile__cards-hide');
+}
+
 menubtn.addEventListener('click', (e) => {
   toggleMenu();
 });
@@ -118,6 +125,7 @@ menubtn.addEventListener('click', (e) => {
 menucontainer.addEventListener('click', (e) => {
   if (e.target.classList.contains('menu__item')) {
     toggleMenu();
+    closeModal();
   }
 });
 
@@ -125,8 +133,5 @@ const moreInfoModal = d.getElementById('more-info-modal');
 const moreInfoBtn = d.getElementById('more-info-btn');
 const lessInfoBtn = d.getElementById('less-info-btn');
 
-function toggleModal() {
-  moreInfoModal.classList.toggle('mobile__cards-hide');
-}
 moreInfoBtn.addEventListener('click', (e) => toggleModal());
 lessInfoBtn.addEventListener('click', (e) => toggleModal());
